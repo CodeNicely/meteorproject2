@@ -2,7 +2,7 @@ import { Template } from 'meteor/templating';
 import './body.html';
 import { Tasks } from '../api/tasks.js';
 import './task.js';
-
+import './login.css';
 
 Template.body.helpers({
 

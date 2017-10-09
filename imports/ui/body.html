@@ -2,27 +2,31 @@
 
   <div class="container">
 
-    <header>
-
-      <h1>Todo List</h1>
-
-    <form class="new-task">
-
-        <input type="text" name="text" placeholder="Type to add new tasks" />
-
-      </form>
-
-    </header>
-
-
 
     <ul>
 
+      <h1 style="color:blue;">please let me know for any queries</h1>
+       <img src="/images/enquiry.png"/>
+      <p style="margin-left:250px; color:green;">{{> loginButtons}}</p>
+      {{#if currentUser}}
+      <header>
+
+        <h1>Ticket Lists</h1>
+
+        <form class="new-task">
+          <!-- <input type="text1" name="text1" placeholder="enter user name"> -->
+          <input type="text" name="text" placeholder="Type to add new Tickets" />
+        </form>
+
+      </header>
+
       {{#each tasks}}
-
         {{> task}}
-
+        {{> task}}
       {{/each}}
+      {{ilse}}
+      {{/if}}
+
 
     </ul>
 
